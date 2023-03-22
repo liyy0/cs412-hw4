@@ -1,34 +1,60 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
+<head>
+  <title><%= title %></title>
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+<body>
+<h1><%= title %></h1>
+<p>Output here:  <%= output %></p>
 
-    <div>
-      <h1>Http request</h1>
-      <form action="/http" method="post">
-        <input type="text" name="zipcode_b"
-               placeholder="Enter a zipcode">
-        <button type="submit" name="submit">
-          Submit
-        </button>
-      </form>
-    </div>
 
-    <div>
-      <h1>fetch await</h1>
-      <form action="/await" method="post">
-        <input type="text" name="zipcode_c"
-               placeholder="Enter a zipcode">
-        <button type="submit" name="submit">
-          Submit
-        </button>
-      </form>
+<div>
+  <h1>Http request</h1>
+  <form action="/http" method="post">
+    <input type="text" name="zipcode"
+           placeholder="Enter a zipcode">
+    <button type="submit" name="submit">
+      Submit
+    </button>
+  </form>
 
-    </div>
-  </body>
+
+</div>
+
+
+<div>
+  <h1>fetch await</h1>
+  <form action="/await" method="post">
+    <input type="text" name="zipcode"
+           placeholder="Enter a zipcode">
+    <button type="submit" name="submit">
+      Submit
+    </button>
+  </form>
+
+
+</div>
+
+
+
+
+<div>
+  <h1>fetch callback</h1>
+  <form action="/callback" method="post">
+    <input type="text" name="zipcode"
+           placeholder="Enter a zipcode">
+    <button type="submit" name="submit">
+      Submit
+    </button>
+  </form>
+
+
+</div>
+
+
+</body>
 </html>
+
+
+
